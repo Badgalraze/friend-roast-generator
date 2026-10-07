@@ -1,99 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AI Personality Scanner</title>
+<title>🔥 Friend Roast Generator 🔥</title>
 
 <style>
 
 body{
-    background:#081225;
-    color:white;
-    font-family:Arial,sans-serif;
-    text-align:center;
-    margin:0;
-    padding-top:80px;
-}
-
-.container{
-    width:90%;
-    max-width:700px;
-    margin:auto;
+background:#0f172a;
+color:white;
+font-family:Arial,sans-serif;
+text-align:center;
+padding:40px;
+margin:0;
 }
 
 h1{
-    color:#ff4d4d;
-    font-size:50px;
+font-size:50px;
+color:#ff4d4d;
+margin-bottom:10px;
 }
 
 .subtitle{
-    color:#b8c7e0;
-    margin-bottom:30px;
+color:#cbd5e1;
+margin-bottom:30px;
 }
 
 input{
-    width:300px;
-    padding:15px;
-    border-radius:10px;
-    border:none;
-    font-size:18px;
+width:320px;
+padding:15px;
+border:none;
+border-radius:12px;
+font-size:18px;
 }
 
 button{
-    padding:15px 20px;
-    border:none;
-    border-radius:10px;
-    background:#ff3c3c;
-    color:white;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    margin-left:10px;
+padding:15px 25px;
+border:none;
+border-radius:12px;
+font-size:18px;
+font-weight:bold;
+background:#ff4d4d;
+color:white;
+cursor:pointer;
+margin-left:10px;
 }
 
 button:hover{
-    background:#ff1f1f;
+transform:scale(1.05);
 }
 
 #result{
-    margin-top:40px;
-    font-size:24px;
-    color:#00ff88;
-    font-family:monospace;
-    min-height:100px;
+margin-top:40px;
+font-family:monospace;
+font-size:22px;
+color:#00ff99;
+white-space:pre-line;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
-
-<h1>🤖 AI Personality Scanner</h1>
+<h1>🔥 FRIEND ROAST GENERATOR 🔥</h1>
 
 <p class="subtitle">
-Advanced Behavioural Analysis Engine v8.4
+Powered by Completely Unbiased Artificial Intelligence™
 </p>
 
 <input
-type="text"
 id="nameInput"
-placeholder="Enter Subject Name">
+placeholder="Enter Friend's Name">
 
-<button onclick="scanTarget()">
-START SCAN
+<button onclick="roastFriend()">
+ANALYZE SUBJECT
 </button>
 
 <div id="result"></div>
 
-</div>
-
 <script>
 
-function scanTarget(){
+function roastFriend(){
 
 const name =
 document.getElementById("nameInput")
@@ -104,142 +97,291 @@ document.getElementById("nameInput")
 const result =
 document.getElementById("result");
 
+const scanMessages = [
+
+"🔍 Scanning subject...",
+"📊 Gathering embarrassing data...",
+"🧠 Analysing personality...",
+"📱 Reviewing screen-time habits...",
+"⚠️ Searching for common sense...",
+"☕ Measuring caffeine levels...",
+"📣 Contacting former classmates...",
+"🎭 Calculating drama potential...",
+"💀 Searching group chat archives...",
+"🤖 Consulting AI roast engine...",
+"🚨 Accessing secret files...",
+"📂 Opening classified records..."
+
+];
+
 result.innerHTML =
-"🔍 Accessing database...";
+scanMessages[Math.floor(Math.random()*scanMessages.length)];
 
 setTimeout(function(){
 
 result.innerHTML =
-"📊 Collecting public embarrassment records...";
+scanMessages[Math.floor(Math.random()*scanMessages.length)];
 
 },1000);
 
 setTimeout(function(){
 
 result.innerHTML =
-"🧠 Running personality analysis...";
+scanMessages[Math.floor(Math.random()*scanMessages.length)];
 
 },2000);
 
 setTimeout(function(){
 
-result.innerHTML =
-"⚠️ Searching for common sense...";
+if(
+name==="aze" ||
+name==="azel" ||
+name==="zel" ||
+name==="anna" ||
+name==="batang galit"
+){
 
-},3000);
+const compliments = [
 
-setTimeout(function(){
+"👑 ROAST ATTEMPT FAILED\n\nReason: Subject appears gorgeous.",
 
-if(name === "aze"){
+"💎 Beauty Scan Complete\n\nResult: Ridiculous.",
 
-const azeResults = [
+"🏆 National Treasure Status Confirmed.",
 
-"👑 AZE DETECTED. Scan cancelled. Subject appears flawless.",
+"👑 Main Character Energy: 100%.",
 
-"🏆 RESULT: National treasure status confirmed.",
+"🌸 Subject appears unfairly attractive.",
 
-"💎 Premium Human detected.",
+"💖 Gorgeousness exceeds scanner capability.",
 
-"🧠 Intelligence levels exceed system limits.",
+"✨ Model energy detected.",
 
-"🚨 Error: Weaknesses could not be located.",
+"👑 Certified Queen Behaviour.",
 
-"⭐ Subject appears unfairly overpowered.",
+"⭐ Plot Armour detected.",
 
-"🎯 Special Ability: Solving everyone's problems except her own.",
+"💎 Premium Human Edition.",
 
-"👑 Developer bias detected. Roast unavailable.",
+"🏅 Achievement Unlocked:\nToo Pretty To Roast.",
 
-"📊 Main character energy: 100%.",
+"✨ Intelligence and beauty detected simultaneously.",
 
-"🏅 Friend Roast Generator has become Friend Compliment Generator."
+"👑 Crown successfully assigned.",
+
+"🌷 Everybody else is being compared against this subject.",
+
+"💖 Subject appears photogenic by default.",
+
+"🏆 Friend Group MVP confirmed.",
+
+"💎 Luxury Edition Human.",
+
+"⭐ Success probability: Extremely high.",
+
+"🌸 Elegant. Intelligent. Dangerous.",
+
+"👑 Final Result:\nToo iconic for criticism.",
+
+"💖 Subject appears gorgeous from every angle.",
+
+"🏅 Achievement Unlocked:\nEffortlessly Iconic.",
+
+"✨ Charm stat maxed out.",
+
+"👑 AI has developed favourites.",
+
+"💎 Beauty score broke the database.",
+
+"🌷 Subject looks like the answer key.",
+
+"⭐ Scanner respectfully declines to roast this user.",
+
+"💖 Advanced Gorgeousness detected.",
+
+"🏆 Legendary Status Confirmed.",
+
+"👑 Final Verdict:\nBuilt Different."
 
 ];
 
 result.innerHTML =
-azeResults[
-Math.floor(Math.random()*azeResults.length)
+compliments[
+Math.floor(Math.random()*compliments.length)
 ];
 
 return;
 }
 
-if(name === "dan"){
+if(name==="dan"){
 
-const danResults = [
+const danRoasts = [
 
-"🚨 DAN DETECTED. Anger level already at 97%.",
+"🚨 DAN REPORT\n\nPatience: 2%\nConfidence: 200%",
 
-"⚠️ Dan was offended before the scan even finished.",
+"⚠️ Dan was offended before the report loaded.",
 
-"📣 Dan is currently preparing a rebuttal.",
+"📣 Dan is already preparing a response.",
 
-"🔥 Dan treats every joke like a personal attack.",
+"🤖 Dan disagrees with these findings.",
 
-"🤖 Patience could not be located.",
+"🎯 Special Ability:\nTurning jokes into debates.",
 
-"📊 Dan has disagreed with this result already.",
+"⚡ Common Sense Scan Failed.",
 
-"🎯 Dan can turn any conversation into a debate.",
+"📚 Dan could argue with a fortune cookie.",
 
-"🚨 Main Character Syndrome detected.",
+"🚨 Threat Level:\nMildly Annoyed.",
 
-"⚡ Blood pressure increased during scan.",
+"📊 AI Prediction:\nDan is typing aggressively.",
 
-"🔍 Search Results: Dan has never once said 'fair enough'.",
+"🎤 Dan enters group chats like a UFC challenger.",
 
-"📚 Dan could start an argument with a fortune cookie.",
+"🔥 Dan treats banter like a court case.",
 
-"🧠 AI Prediction: Dan is typing aggressively right now.",
+"⚠️ Warning:\nRebuttal loading...",
 
-"⚠️ System Warning: Subject believes everyone else is wrong.",
+"📣 Dan believes volume increases accuracy.",
 
-"🎤 Dan enters group chats like he's joining a UFC event."
+"🧠 Dan has never said 'fair enough'.",
+
+"🎯 Known Weakness:\nBeing told to calm down.",
+
+"🚨 Dan disagrees with this report already.",
+
+"📊 Personality Analysis:\nCompetitive for no reason.",
+
+"⚡ Emotional Damage Resistance: Low.",
+
+"📣 Preparing counterargument...",
+
+"🧠 Final Verdict:\nCurrently annoyed."
 
 ];
 
 result.innerHTML =
-danResults[
-Math.floor(Math.random()*danResults.length)
+danRoasts[
+Math.floor(Math.random()*danRoasts.length)
 ];
 
 return;
 }
 
-const normalResults = [
+const achievements = [
+
+"🏆 Olympic Procrastinator",
+"📱 Full-Time Screen User",
+"☕ Caffeine Powered Human",
+"💀 Walking Chaos Generator",
+"🎭 Drama Consultant",
+"🚀 Main Character Candidate",
+"🧠 Functional Adult",
+"⚡ Chaos Specialist",
+"📣 Professional Excuse Maker",
+"🥇 Certified Overthinker"
+
+];
+
+const verdicts = [
+
+"Powered by caffeine and hope.",
+"Professionally unbothered.",
+"Needs supervision.",
+"Running entirely on vibes.",
+"Dangerously confident.",
+"Likely harmless but confusing.",
+"Certified menace to productivity.",
+"Would lose a debate and continue anyway.",
+"Powered by luck and questionable judgement.",
+"Suspiciously functional."
+
+];
+
+const roasts = [
 
 name + " has more screenshots than memories.",
-
-name + " starts a task and unlocks six side quests.",
-
-name + " checks the fridge hoping food has respawned.",
-
-name + " opens TikTok for five minutes and disappears for four hours.",
-
-name + " has mastered professional procrastination.",
-
-name + " could turn a two minute task into a weekend project.",
-
-name + " has 47 browser tabs open and needs all of them.",
-
-name + " believes 'I'll do it later' is a life strategy.",
-
-name + " is running entirely on luck and caffeine.",
-
+name + " checks the fridge hoping food respawns.",
+name + " opens TikTok and disappears for hours.",
+name + " has 47 browser tabs open.",
+name + " could lose a phone while holding it.",
+name + " starts a task and unlocks side quests.",
+name + " has mastered procrastination.",
+name + " survives entirely on luck.",
+name + " treats deadlines as suggestions.",
+name + " could make being late a profession.",
+name + " opens messages and forgets to reply.",
+name + " is powered by poor decisions.",
+name + " somehow gets tired from resting.",
+name + " has Google open for emotional support.",
+name + " turns every inconvenience into a side quest.",
+name + " has enough saved memes to open a museum.",
 name + " could get distracted during a staring contest.",
-
+name + " uses confidence instead of preparation.",
+name + " has achieved legendary overthinking.",
+name + " makes bad decisions with impressive confidence.",
+name + " is running on caffeine and questionable choices.",
+name + " has a black belt in avoiding responsibility.",
+name + " spends more time planning than doing.",
+name + " believes tomorrow will solve everything.",
+name + " accidentally makes simple things complicated.",
+name + " still doesn't know why they entered the room.",
+name + " works hard avoiding work.",
+name + " starts cleaning to avoid actual work.",
+name + " could spend 30 minutes looking for something beside them.",
+name + " would be rich if procrastination paid money.",
+name + " thinks one more episode means one more episode.",
+name + " has an attention span sponsored by notifications.",
+name + " talks about productivity more than being productive.",
+name + " somehow survives entirely through vibes.",
+name + " creates their own problems then heroically solves them.",
+name + " could start a fire while carrying water.",
+name + " still believes 'I'll do it later' is a valid strategy.",
 name + " has unfinished hobbies stored like museum exhibits.",
-
-name + " starts cleaning the room to avoid doing actual work."
+name + " could miss a reminder reminding them about reminders.",
+name + " makes chaos look organised."
 
 ];
+
+const roast =
+roasts[Math.floor(Math.random()*roasts.length)];
+
+const achievement =
+achievements[Math.floor(Math.random()*achievements.length)];
+
+const verdict =
+verdicts[Math.floor(Math.random()*verdicts.length)];
+
+const rizz =
+Math.floor(Math.random()*100)+1;
+
+const drama =
+Math.floor(Math.random()*100)+1;
+
+const commonSense =
+Math.floor(Math.random()*100)+1;
+
+const threat =
+Math.floor(Math.random()*100)+1;
 
 result.innerHTML =
-normalResults[
-Math.floor(Math.random()*normalResults.length)
-];
 
-},4000);
+"📋 FRIEND ROAST REPORT\n\n" +
+
+"🧠 Common Sense: " + commonSense + "%\n" +
+"❤️ Rizz Level: " + rizz + "%\n" +
+"🎭 Drama Level: " + drama + "%\n" +
+"⚠️ Threat Level: " + threat + "%\n\n" +
+
+"🏅 Achievement\n" +
+achievement + "\n\n" +
+
+"📝 Analysis\n" +
+roast + "\n\n" +
+
+"🏆 Final Verdict\n" +
+verdict;
+
+},3000);
 
 }
 
