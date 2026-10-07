@@ -13,60 +13,50 @@ body{
     color:white;
     font-family:Arial, sans-serif;
     text-align:center;
+    margin:0;
     padding-top:100px;
-}
-
-.container{
-    max-width:700px;
-    margin:auto;
 }
 
 h1{
     color:#ff4d4d;
-    margin-bottom:10px;
-}
-
-p{
-    color:#cbd5e1;
 }
 
 input{
-    padding:12px;
-    width:260px;
+    padding:15px;
+    width:300px;
     border:none;
     border-radius:10px;
-    font-size:16px;
+    font-size:18px;
 }
 
 button{
-    padding:12px 20px;
+    padding:15px 25px;
     border:none;
     border-radius:10px;
-    background:#ff4d4d;
+    background:#ff3b3b;
     color:white;
-    font-weight:bold;
+    font-size:18px;
     cursor:pointer;
     margin-left:10px;
 }
 
 button:hover{
-    background:#ff3030;
+    background:#ff1f1f;
 }
 
 #result{
-    margin-top:35px;
-    font-size:22px;
+    margin-top:40px;
+    font-size:24px;
     color:#00ff99;
     font-family:monospace;
-    text-shadow:0 0 10px #00ff99;
+    text-shadow:0 0 8px #00ff99;
 }
 
 </style>
+
 </head>
 
 <body>
-
-<div class="container">
 
 <h1>🔥 Friend Roast Generator 🔥</h1>
 
@@ -80,137 +70,154 @@ placeholder="Enter friend's name">
 Analyze Subject
 </button>
 
-<h2 id="result"></h2>
-
-</div>
+<div id="result"></div>
 
 <script>
 
 function roastFriend(){
 
-const name =
-document.getElementById("nameInput")
-.value
-.trim()
-.toLowerCase();
+    let name =
+    document.getElementById("nameInput")
+    .value
+    .trim()
+    .toLowerCase();
 
-const result =
-document.getElementById("result");
+    let result =
+    document.getElementById("result");
 
-result.innerHTML =
-"🔍 Scanning subject...";
+    result.innerHTML =
+    "🔍 Scanning subject...";
 
-setTimeout(() => {
+    setTimeout(function(){
 
-result.innerHTML =
-"📊 Gathering embarrassing data...";
+        result.innerHTML =
+        "📊 Gathering embarrassing data...";
 
-},1000);
+    },1000);
 
-setTimeout(() => {
+    setTimeout(function(){
 
-result.innerHTML =
-"🧠 Analyzing personality...";
+        result.innerHTML =
+        "🧠 Analyzing personality...";
 
-},2000);
+    },2000);
 
-setTimeout(() => {
+    setTimeout(function(){
 
-result.innerHTML =
-"⚠️ Finding weaknesses...";
+        result.innerHTML =
+        "⚠️ Finding weaknesses...";
 
-},3000);
+    },3000);
 
-setTimeout(() => {
+    setTimeout(function(){
 
-if(name === "aze"){
+        if(name === "aze"){
 
-const azeResults = [
+            let azeRoasts = [
 
-"👑 AZE DETECTED. Scan cancelled. Subject appears flawless.",
+                "👑 AZE DETECTED. Scan cancelled. Subject appears flawless.",
 
-"🏆 Result: Aze has been promoted from friend to national treasure.",
+                "🏆 Result: Aze has been promoted from friend to national treasure.",
 
-"💎 Premium Human detected.",
+                "💎 Premium Human detected.",
 
-"🧠 Intelligence Scan Complete. No weaknesses found.",
+                "🧠 Intelligence Scan Complete. No weaknesses found.",
 
-"✨ Main Character Energy detected.",
+                "✨ Main Character Energy detected.",
 
-"🚨 Error 404: Roast Not Found.",
+                "🚨 Error 404: Roast Not Found.",
 
-"🏅 Subject appears unfairly overpowered.",
+                "🏅 Subject appears unfairly overpowered.",
 
-"🔥 Too iconic to roast.",
+                "🔥 Too iconic to roast.",
 
-"🎯 Special Ability: Solving everyone's problems except her own.",
+                "🎯 Special Ability: Solving everyone's problems except her own.",
 
-"⭐ System Override: Aze automatically wins."
+                "⭐ System Override: Aze automatically wins."
 
-];
+            ];
 
-result.innerHTML =
-azeResults[
-Math.floor(Math.random()*azeResults.length)
-];
+            result.innerHTML =
+            azeRoasts[
+                Math.floor(
+                Math.random() *
+                azeRoasts.length
+                )
+            ];
 
-return;
+            return;
+        }
+
+        if(name === "dan"){
+
+            let danRoasts = [
+
+                "🚨 DAN DETECTED. Anger level already at 97%.",
+
+                "⚠️ Dan was offended before the scan finished.",
+
+                "🤖 Dan's patience could not be located.",
+
+                "🔥 Dan treats every joke like a court case.",
+
+                "📣 Dan is currently writing a 17-page rebuttal.",
+
+                "🎯 Dan can turn any conversation into an argument.",
+
+                "🚨 ALERT: Dan disagrees with these results.",
+
+                "🧠 AI Prediction: Dan is typing aggressively.",
+
+                "⚡ Dan's blood pressure increased by 4% during this scan."
+
+            ];
+
+            result.innerHTML =
+            danRoasts[
+                Math.floor(
+                Math.random() *
+                danRoasts.length
+                )
+            ];
+
+            return;
+        }
+
+        let randomRoasts = [
+
+            name + " has more screenshots than memories.",
+
+            name + " starts a task and unlocks six side quests.",
+
+            name + " opens TikTok for five minutes and disappears for four hours.",
+
+            name + " treats low battery like a personality trait.",
+
+            name + " has 47 browser tabs open and somehow needs all of them.",
+
+            name + " has mastered the art of procrastination.",
+
+            name + " could turn a two minute task into an entire weekend project.",
+
+            name + " checks the fridge hoping new food has spawned.",
+
+            name + " believes 'I'll do it later' is a productivity strategy."
+
+        ];
+
+        result.innerHTML =
+        randomRoasts[
+            Math.floor(
+            Math.random() *
+            randomRoasts.length
+            )
+        ];
+
+    },4000);
+
 }
 
-if(name === "dan"){
+</script>
 
-const danRoasts = [
-
-"🚨 DAN DETECTED. Anger level already at 97%.",
-
-"⚠️ Dan was offended before the scan finished.",
-
-"🤖 Dan's patience could not be located.",
-
-"🔥 Dan treats every joke like a court case.",
-
-"📣 Dan is currently writing a 17-page rebuttal.",
-
-"🎯 Dan can turn any conversation into an argument.",
-
-"🚨 ALERT: Dan disagrees with these results.",
-
-"🧠 AI Prediction: Dan is typing aggressively.",
-
-"⚡ Dan's blood pressure increased by 4% during this scan."
-
-];
-
-result.innerHTML =
-danRoasts[
-Math.floor(Math.random()*danRoasts.length)
-];
-
-return;
-}
-
-const roasts = [
-
-`${name} has more screenshots than memories.`,
-
-`${name} starts a task and unlocks six side quests.`,
-
-`${name} opens TikTok for five minutes and disappears for four hours.`,
-
-`${name} treats low battery like a personality trait.`,
-
-`${name} has 47 browser tabs open and somehow needs all of them.`,
-
-`${name} has mastered the art of procrastination.`,
-
-`${name} could turn a two-minute task into an entire weekend project.`,
-
-`${name} checks the fridge hoping new food has spawned.`,
-
-`${name} believes "I'll do it later" is a productivity method.`
-
-];
-
-result.innerHTML =
-roasts[
-Math.floor(Math.random()*roasts.length
+</body>
+</html>
