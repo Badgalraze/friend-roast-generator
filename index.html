@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Friend Roast Generator</title>
+
+<style>
+
+body{
+    background:#0f172a;
+    color:white;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    padding-top:100px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+}
+
+h1{
+    color:#ff4d4d;
+    margin-bottom:10px;
+}
+
+p{
+    color:#cbd5e1;
+}
+
+input{
+    padding:12px;
+    width:260px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#ff4d4d;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+button:hover{
+    background:#ff3030;
+}
+
+#result{
+    margin-top:35px;
+    font-size:22px;
+    color:#00ff99;
+    font-family:monospace;
+    text-shadow:0 0 10px #00ff99;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🔥 Friend Roast Generator 🔥</h1>
+
+<p>Advanced AI Personality Analysis System v4.2</p>
+
+<input
+id="nameInput"
+placeholder="Enter friend's name">
+
+<button onclick="roastFriend()">
+Analyze Subject
+</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+<script>
+
+function roastFriend(){
+
+const name =
+document.getElementById("nameInput")
+.value
+.trim()
+.toLowerCase();
+
+const result =
+document.getElementById("result");
+
+result.innerHTML =
+"🔍 Scanning subject...";
+
+setTimeout(() => {
+
+result.innerHTML =
+"📊 Gathering embarrassing data...";
+
+},1000);
+
+setTimeout(() => {
+
+result.innerHTML =
+"🧠 Analyzing personality...";
+
+},2000);
+
+setTimeout(() => {
+
+result.innerHTML =
+"⚠️ Finding weaknesses...";
+
+},3000);
+
+setTimeout(() => {
+
+if(name === "aze"){
+
+const azeResults = [
+
+"👑 AZE DETECTED. Scan cancelled. Subject appears flawless.",
+
+"🏆 Result: Aze has been promoted from friend to national treasure.",
+
+"💎 Premium Human detected.",
+
+"🧠 Intelligence Scan Complete. No weaknesses found.",
+
+"✨ Main Character Energy detected.",
+
+"🚨 Error 404: Roast Not Found.",
+
+"🏅 Subject appears unfairly overpowered.",
+
+"🔥 Too iconic to roast.",
+
+"🎯 Special Ability: Solving everyone's problems except her own.",
+
+"⭐ System Override: Aze automatically wins."
+
+];
+
+result.innerHTML =
+azeResults[
+Math.floor(Math.random()*azeResults.length)
+];
+
+return;
+}
+
+if(name === "dan"){
+
+const danRoasts = [
+
+"🚨 DAN DETECTED. Anger level already at 97%.",
+
+"⚠️ Dan was offended before the scan finished.",
+
+"🤖 Dan's patience could not be located.",
+
+"🔥 Dan treats every joke like a court case.",
+
+"📣 Dan is currently writing a 17-page rebuttal.",
+
+"🎯 Dan can turn any conversation into an argument.",
+
+"🚨 ALERT: Dan disagrees with these results.",
+
+"🧠 AI Prediction: Dan is typing aggressively.",
+
+"⚡ Dan's blood pressure increased by 4% during this scan."
+
+];
+
+result.innerHTML =
+danRoasts[
+Math.floor(Math.random()*danRoasts.length)
+];
+
+return;
+}
+
+const roasts = [
+
+`${name} has more screenshots than memories.`,
+
+`${name} starts a task and unlocks six side quests.`,
+
+`${name} opens TikTok for five minutes and disappears for four hours.`,
+
+`${name} treats low battery like a personality trait.`,
+
+`${name} has 47 browser tabs open and somehow needs all of them.`,
+
+`${name} has mastered the art of procrastination.`,
+
+`${name} could turn a two-minute task into an entire weekend project.`,
+
+`${name} checks the fridge hoping new food has spawned.`,
+
+`${name} believes "I'll do it later" is a productivity method.`
+
+];
+
+result.innerHTML =
+roasts[
+Math.floor(Math.random()*roasts.length
